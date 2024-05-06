@@ -8,83 +8,239 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Mini-Project Starter</title>
   </head>
-  <body class="m-4">
-    <h1>Mini-Project Starter</h1>
-    <button class="btn btn-dark" data-bs-theme-value="dark">
-      Enable Dark Mode
-    </button>
-    <button class="btn btn-light" data-bs-theme-value="light">
-      Enable Light Mode
-    </button>
-    <div class="dropdown m-2">
-      <button
-        class="btn btn-secondary dropdown-toggle"
-        type="button"
-        id="dropdownMenuButtonLight"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Responsive color dropdown
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item active" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-        <li><hr class="dropdown-divider" /></li>
-        <li><a class="dropdown-item" href="#">Separated link</a></li>
-      </ul>
-    </div>
-    <div class="dropdown m-2" data-bs-theme="light">
-      <button
-        class="btn btn-secondary dropdown-toggle"
-        type="button"
-        id="dropdownMenuButtonLight"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Light dropdown
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-        <li><a class="dropdown-item active" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-        <li><hr class="dropdown-divider" /></li>
-        <li><a class="dropdown-item" href="#">Separated link</a></li>
-      </ul>
-    </div>
-
-    <div class="dropdown m-2" data-bs-theme="dark">
-      <button
-        class="btn btn-secondary dropdown-toggle"
-        type="button"
-        id="dropdownMenuButtonDark"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Dark dropdown
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonDark">
-        <li><a class="dropdown-item active" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-        <li><hr class="dropdown-divider" /></li>
-        <li><a class="dropdown-item" href="#">Separated link</a></li>
-      </ul>
-    </div>
-    <div class="card" style="width: 18rem">
-      <div class="card-header">This is a card</div>
-      <div class="card-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-        dolorum eveniet quaerat veniam quibusdam iure necessitatibus rerum error
-        nostrum itaque facilis ipsa sed accusamus voluptatem voluptatum
-        praesentium impedit, sunt nobis?
+  <body class="p-2">
+    <div class="d-flex justify-content-end m-2">
+      <div class="btn-group">
+        <button class="btn btn-secondary" data-bs-theme-value="dark">
+          Dark
+        </button>
+        <button class="btn btn-light" data-bs-theme-value="light">Light</button>
       </div>
     </div>
-
+    <div class="container">
+      <h2>Users</h2>
+      <div class="row justify-content-between">
+        <div class="col-md-4 col-12">
+          <div class="input-group flex-nowrap">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              placeholder="Search Users"
+              aria-label="SearchUsers"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+        </div>
+        <div class="col-md-8 col-12 d-flex justify-content-end user-menu">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="btn text-primary">Reputation</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn btn-primary">New Users</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn text-primary">Editors</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn text-primary">Moderators</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- User List -->
+    <div class="container my-2">
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="col-md-4">
+          <div
+            class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-placement="top"
+            data-bs-content="Email: Lehla@gmail.com"
+          >
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/75.jpg"
+                    alt="#"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <div class="user-info">
+                  <h4>Lehla Nichols</h4>
+                  <h6>Forth Worth, TX</h6>
+                  <span class="badge bg-primary"> Fashion</span>
+                  <span class="badge bg-primary"> Stem</span>
+                  <span class="badge bg-primary"> Archtecture</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-placement="top"
+            data-bs-content="Email: Annie@gmail.com"
+          >
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/50.jpg"
+                    alt="#"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <div class="user-info">
+                  <h4>Annie Rice</h4>
+                  <h6>Troy, MI</h6>
+                  <span class="badge bg-primary"> Electronics</span>
+                  <span class="badge bg-primary"> Tech</span>
+                  <span class="badge bg-primary"> Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-placement="top"
+            data-bs-content="Email: john@gmail.com"
+          >
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/75.jpg"
+                    alt="#"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <div class="user-info">
+                  <h4>john Doe</h4>
+                  <h6>Troy MI</h6>
+                  <span class="badge bg-primary"> Nature</span>
+                  <span class="badge bg-primary"> Travel</span>
+                  <span class="badge bg-primary"> Sports</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 2 -->
+      <div class="row">
+        <div class="col-md-4">
+          <div
+            class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-placement="top"
+            data-bs-content="Email: Thomas@gmail.com"
+          >
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/50.jpg"
+                    alt="#"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <div class="user-info">
+                  <h4>Thomas Sinew</h4>
+                  <h6>Lynn, MA</h6>
+                  <span class="badge bg-primary"> Vintage</span>
+                  <span class="badge bg-primary"> Clothing</span>
+                  <span class="badge bg-primary"> Sport</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-placement="top"
+            data-bs-content="Email: brianna@gmail.com"
+          >
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/52.jpg"
+                    alt="#"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <div class="user-info">
+                  <h4>brianna Haylee</h4>
+                  <h6>Boston, MA</h6>
+                  <span class="badge bg-primary"> Software</span>
+                  <span class="badge bg-primary"> Design</span>
+                  <span class="badge bg-primary"> UI/UX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card mb-3"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-placement="top"
+            data-bs-content="Email: james@gmail.com"
+          >
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/40.jpg"
+                    alt="#"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <div class="user-info">
+                  <h4>James Hall</h4>
+                  <h6>Austin MI</h6>
+                  <span class="badge bg-primary"> Dance</span>
+                  <span class="badge bg-primary"> Fashion</span>
+                  <span class="badge bg-primary"> Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/darkModeToggle.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
   </body>
 </html>
